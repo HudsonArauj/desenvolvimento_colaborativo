@@ -1,0 +1,23 @@
+package br.edu.insper.desagil.aula2;
+
+public class FizzBuzz {
+
+	public String calcula(int n) {
+		String resposta = "";
+		if(n % 3 == 0 && n %5 == 0) {
+			resposta+= "FizzBuzz";
+		}
+		else if (n % 3 ==0) {
+			resposta += "Fizz";
+		}
+		else if (n %5 ==0){
+			resposta +="Buzz";
+		}
+		else {
+			return Integer.toString(n);
+			
+		}
+		return resposta;
+	}
+
+}
